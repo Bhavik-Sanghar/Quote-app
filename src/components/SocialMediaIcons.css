@@ -1,0 +1,19 @@
+.social-media-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 100; /* Ensure the icons are above other content */
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  

@@ -1,0 +1,33 @@
+.card-container {
+  background-color: black;
+  color: whitesmoke;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure container takes at least full viewport height */
+}
+
+.card {
+  width: 640px;
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.quote-container{
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  transform: translateX();
+}
+
+.author {
+  font: normal 1.2em "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #000;
+  border-top: solid 5px #fff;
+  color: #fff;
+}

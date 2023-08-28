@@ -1,0 +1,44 @@
+.quote-container{
+  padding: auto;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color : black;
+  background-image: url(./bg.jpg);
+  color : white;
+}
+
+.quote-container h1
+  {
+    background-image: url(./h1.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    word-spacing: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue';
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 999;
+
+}
+
+.quote-container:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.card-container{
+  backdrop-filter: blur(5px);
+    background-color: hsla(0,0%,100%,.2);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+
