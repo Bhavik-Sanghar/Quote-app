@@ -1,25 +1,91 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './New.css';
-import next from '../next.png';
+import "./New.css";
+import next from "../next.png";
 import SocialMediaIcons from "./SocialMediaIcons";
-import { TwitterShareButton, FacebookShareButton, LinkedinShareButton } from "react-share";
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+} from "react-share";
 
 const QuoteComponent = () => {
   const [quotes, setQuotes] = useState([]);
-  const category = "inspirational";const categories = [
-    "age", "alone", "amazing", "anger", "architecture", "art", "attitude", "beauty", "best", "birthday",
-    "business", "car", "change", "communication", "computers", "cool", "courage", "dad", "dating", "death",
-    "design", "dreams", "education", "environmental", "equality", "experience", "failure", "faith", "family",
-    "famous", "fear", "fitness", "food", "forgiveness", "freedom", "friendship", "funny", "future", "god",
-    "good", "government", "graduation", "great", "happiness", "health", "history", "home", "hope", "humor",
-    "imagination", "inspirational", "intelligence", "jealousy", "knowledge", "leadership", "learning", "legal",
-    "life", "love", "marriage", "medical", "men", "mom", "money", "morning", "movies", "success"
+  const category = "inspirational";
+  const categories = [
+    "age",
+    "alone",
+    "amazing",
+    "anger",
+    "architecture",
+    "art",
+    "attitude",
+    "beauty",
+    "best",
+    "birthday",
+    "business",
+    "car",
+    "change",
+    "communication",
+    "computers",
+    "cool",
+    "courage",
+    "dad",
+    "dating",
+    "death",
+    "design",
+    "dreams",
+    "education",
+    "environmental",
+    "equality",
+    "experience",
+    "failure",
+    "faith",
+    "family",
+    "famous",
+    "fear",
+    "fitness",
+    "food",
+    "forgiveness",
+    "freedom",
+    "friendship",
+    "funny",
+    "future",
+    "god",
+    "good",
+    "government",
+    "graduation",
+    "great",
+    "happiness",
+    "health",
+    "history",
+    "home",
+    "hope",
+    "humor",
+    "imagination",
+    "inspirational",
+    "intelligence",
+    "jealousy",
+    "knowledge",
+    "leadership",
+    "learning",
+    "legal",
+    "life",
+    "love",
+    "marriage",
+    "medical",
+    "men",
+    "mom",
+    "money",
+    "morning",
+    "movies",
+    "success",
   ];
-  
+
   // Randomly select a category
-  const randomCategory = categories[Math.floor(Math.random() * categories.length)];
-  
+  const randomCategory =
+    categories[Math.floor(Math.random() * categories.length)];
+
   console.log(randomCategory);
   const apiKey = "EgtS4gqLsbjvHM2bBjKwBA==PYmsGLFQFXQzq0Na";
 
@@ -72,7 +138,9 @@ const QuoteComponent = () => {
           ))}
         </div>
         <button className="fetch-button" onClick={handleFetchNewQuotes}>
-          <abbr title="NEXT"><img id='next' src={next} alt="Next" /></abbr>
+          <abbr title="NEXT">
+            <button class="btn"> {">>>"} </button>
+          </abbr>
         </button>
       </div>
     </>
