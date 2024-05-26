@@ -8,7 +8,7 @@ const SocialMediaIcons = () => {
       <a href="https://www.linkedin.com/in/bhavik-sanghar-360712271/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className="social-icon" />
       </a>
-      <a href="https://twitter.com/bhaviksuiya22" target="_blank" rel="noopener noreferrer">
+      <a href="https://twitter.com/intent/tweet/post=Noob" target="_blank" rel="noopener noreferrer">
         <FaTwitter  className="social-icon" />
       </a>
       <a href="https://www.instagram.com/sanghar_bhavik/" target="_blank" rel="noopener noreferrer">
